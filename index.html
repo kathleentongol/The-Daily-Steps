@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Daily Steps</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- LOGIN SCREEN -->
+  <section id="loginSection">
+    <div class="login-box">
+      <h1>The Daily Steps</h1>
+      <p>Welcome! Please log in to continue.</p>
+
+      <input type="email" id="emailInput" placeholder="Enter your email" required>
+      <input type="password" id="passwordInput" placeholder="Enter your password" required>
+      <button id="loginBtn">Login</button>
+
+      <p class="small-text">New user? Just enter your email and password to create an account.</p>
+    </div>
+  </section>
+
+  <!-- MAIN SITE -->
+  <div id="mainSite">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>The Daily Steps</h1>
+        </div>
+        <nav class="nav-cta">
+          <span id="welcomeMsg"></span>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="badge">Transform Your Life, One Small Step at a Time</div>
+          <h2 class="hero-title">
+            One small step a day, <span class="accent">a better you</span> tomorrow
+          </h2>
+          <p class="hero-lead">
+            Join thousands of people building better habits with daily micro challenges.
+            No pressure, no guilt—just simple actions that create lasting change.
+          </p>
+          <div class="hero-cta-row">
+            <button id="startJourney" class="btn primary">Start Your Journey →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOTIVATIONAL QUOTE -->
+      <div class="quote-card">
+        <p class="quote" id="quoteText"></p>
+        <span class="quote-author" id="quoteAuthor"></span>
+      </div>
+
+      <!-- CHALLENGE DASHBOARD -->
+      <section class="dashboard" id="challengesSection">
+        <div class="container">
+          <div class="dash-row">
+            <div class="stat-card">
+              <div class="stat-emoji">🔥</div>
+              <div class="stat-number" id="streakCount">0</div>
+              <div class="stat-label">Current Streak</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-emoji">🏆</div>
+              <div class="stat-number" id="completedCount">0</div>
+              <div class="stat-label">Total Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-emoji">📅</div>
+              <div class="stat-number" id="todayStatus">Pending</div>
+              <div class="stat-label">Today's Status</div>
+            </div>
+          </div>
+
+          <div class="today-challenge">
+            <h4>Today's Challenge</h4>
+            <p class="challenge-title">Take a 10-Minute Walk</p>
+            <p>Step outside and enjoy a brief walk around your neighborhood or office.</p>
+            <button id="markComplete" class="btn mark">⟳ Mark As Complete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 | Tongol, Kathleen Faye | NW 201</p>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
